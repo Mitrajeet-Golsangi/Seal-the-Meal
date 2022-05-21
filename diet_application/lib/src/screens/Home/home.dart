@@ -1,4 +1,4 @@
-import 'package:diet_application/src/components/CustomScaffold/custom_scaffold.dart';
+import 'package:diet_application/src/SideNav/CustomScaffold/custom_scaffold.dart';
 import 'package:diet_application/src/screens/Home/CircularIndicator.dart';
 import 'package:diet_application/src/screens/Home/styles.dart';
 import 'package:diet_application/src/screens/Menu/menu.dart';
@@ -97,17 +97,21 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             SizedBox(
               height: 200,
-              child: ListView.separated(
-                separatorBuilder: (context, index) {
-                  return const Divider();
-                },
-                itemCount: items.length,
-                itemBuilder: (context, i) {
-                  return ListTile(
-                      leading: Text((i + 1).toString()),
-                      title: Text(
-                          items[i][0].toUpperCase() + items[i].substring(1)));
-                },
+              child: Scrollbar(
+                thumbVisibility: true,
+                radius: const Radius.circular(100),
+                child: ListView.separated(
+                  separatorBuilder: (context, index) {
+                    return const Divider();
+                  },
+                  itemCount: items.length,
+                  itemBuilder: (context, i) {
+                    return ListTile(
+                        leading: Text((i + 1).toString()),
+                        title: Text(
+                            items[i][0].toUpperCase() + items[i].substring(1)));
+                  },
+                ),
               ),
             ),
             const SizedBox(

@@ -1,4 +1,4 @@
-import 'package:diet_application/src/components/SideNav/styles.dart';
+import 'package:diet_application/src/SideNav/SideNav/styles.dart';
 import 'package:diet_application/src/screens/Auth/log_out.dart';
 import 'package:diet_application/src/screens/Explore/explore.dart';
 import 'package:diet_application/src/screens/Home/home.dart';

@@ -1,5 +1,5 @@
-import 'package:diet_application/src/components/SideNav/side_nav.dart';
-import 'package:diet_application/src/components/SideNav/styles.dart';
+import 'package:diet_application/src/SideNav/SideNav/side_nav.dart';
+import 'package:diet_application/src/SideNav/SideNav/styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomScaffold extends StatelessWidget {

@@ -1,9 +1,11 @@
-import 'package:diet_application/src/components/SideNav/styles.dart';
+import 'package:diet_application/src/SideNav/SideNav/styles.dart';
 import 'package:diet_application/src/screens/Auth/log_out.dart';
+import 'package:diet_application/src/screens/Auth/register.dart';
+import 'package:diet_application/src/screens/Auth/SignIn/sign_in.dart';
 import 'package:diet_application/src/screens/Explore/explore.dart';
-import 'package:diet_application/src/screens/Home/home.dart';
 import 'package:diet_application/src/screens/Menu/menu.dart';
 import 'package:diet_application/src/screens/Profile/profile.dart';
+import 'package:diet_application/src/screens/Splash/splash_screen.dart';
 import 'package:diet_application/src/screens/Workout/workout.dart';
 import 'package:diet_application/src/styles/colors.dart';
 import 'package:flutter/material.dart';
@@ -59,12 +61,38 @@ class MyApp extends StatelessWidget {
           // SettingsController to display the correct theme.
           theme: ThemeData(
               appBarTheme: const AppBarTheme(
-            backgroundColor: Colors.lightGreen,
-            actionsIconTheme: IconThemeData(
-              color: ProjectColors.primary,
-            ),
-            titleTextStyle: Styles.heading,
-          )),
+                backgroundColor: Colors.lightGreen,
+                actionsIconTheme: IconThemeData(
+                  color: ProjectColors.primary,
+                ),
+                titleTextStyle: Styles.heading,
+              ),
+              inputDecorationTheme: const InputDecorationTheme(
+                contentPadding: EdgeInsets.all(10),
+                alignLabelWithHint: true,
+                focusColor: ProjectColors.primary,
+                fillColor: ProjectColors.primary,
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(5),
+                  ),
+                  borderSide: BorderSide(
+                    color: ProjectColors.primary,
+                  ),
+                ),
+                border: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: ProjectColors.inputBorder,
+                  ),
+                  gapPadding: 2,
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(5),
+                  ),
+                ),
+              ),
+              colorScheme: ThemeData()
+                  .colorScheme
+                  .copyWith(primary: ProjectColors.primary)),
           darkTheme: ThemeData.dark(),
           themeMode: settingsController.themeMode,
 
@@ -85,8 +113,15 @@ class MyApp extends StatelessWidget {
                     return const LogOut();
                   case Menu.routeName:
                     return const Menu();
+                  case SplashScreen.routeName:
+                    return const SplashScreen();
+                  case SignIn.routeName:
+                    return const SignIn();
+                  case Register.routeName:
+                    return const Register();
                   default:
-                    return const HomeScreen();
+                    // return const HomeScreen();
+                    return const SplashScreen();
                 }
               },
             );

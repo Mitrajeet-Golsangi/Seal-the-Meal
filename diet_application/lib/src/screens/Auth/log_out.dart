@@ -1,4 +1,4 @@
-import 'package:diet_application/src/components/CustomScaffold/custom_scaffold.dart';
+import 'package:diet_application/src/SideNav/CustomScaffold/custom_scaffold.dart';
 import 'package:flutter/material.dart';
 
 class LogOut extends StatefulWidget {

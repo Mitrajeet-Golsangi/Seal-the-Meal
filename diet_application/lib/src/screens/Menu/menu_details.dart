@@ -1,4 +1,4 @@
-import 'package:diet_application/src/components/SideNav/styles.dart';
+import 'package:diet_application/src/SideNav/SideNav/styles.dart';
 import 'package:flutter/material.dart';
 
 class MenuDetails extends StatelessWidget {
@@ -31,17 +31,23 @@ class MenuDetails extends StatelessWidget {
           ),
           SizedBox(
               height: 330,
-              child: ListView.separated(
-                separatorBuilder: (context, index) {
-                  return const Divider();
-                },
-                itemCount: items.length,
-                itemBuilder: (context, i) {
-                  return ListTile(
-                      leading: Text((i + 1).toString()),
-                      title: Text(
-                          items[i][0].toUpperCase() + items[i].substring(1)));
-                },
+              child: Scrollbar(
+                thumbVisibility: true,
+                radius: const Radius.circular(100),
+                thickness: 10,
+                interactive: true,
+                child: ListView.separated(
+                  separatorBuilder: (context, index) {
+                    return const Divider();
+                  },
+                  itemCount: items.length,
+                  itemBuilder: (context, i) {
+                    return ListTile(
+                        leading: Text((i + 1).toString()),
+                        title: Text(
+                            items[i][0].toUpperCase() + items[i].substring(1)));
+                  },
+                ),
               ))
         ],
       ),

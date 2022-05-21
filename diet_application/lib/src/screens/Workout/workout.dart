@@ -1,4 +1,4 @@
-import 'package:diet_application/src/components/CustomScaffold/custom_scaffold.dart';
+import 'package:diet_application/src/SideNav/CustomScaffold/custom_scaffold.dart';
 import 'package:flutter/material.dart';
 
 class Workout extends StatefulWidget {
@@ -54,36 +54,41 @@ class _WorkoutState extends State<Workout> {
         padding: const EdgeInsets.all(10),
         child: SizedBox(
           height: 500,
-          child: ListView.builder(
-            itemCount: workouts.length,
-            itemBuilder: (context, i) {
-              return Column(
-                children: [
-                  Text(workouts[i]['type']),
-                  const Divider(
-                    thickness: 1,
-                  ),
-                  SizedBox(
-                    height: workouts[i]['activities'].length * 70.0,
-                    child: ListView.separated(
-                      physics: const NeverScrollableScrollPhysics(),
-                      separatorBuilder: (context, index) => const Divider(),
-                      itemCount: workouts[i]['activities'].length,
-                      itemBuilder: (context, j) {
-                        return ListTile(
-                          title: Text(workouts[i]['activities'][j]),
-                          trailing: Switch(
-                            onChanged: (bool value) => toggleSwitch(
-                                value, workouts[i]['activities'][j]),
-                            value: switchVal[workouts[i]['activities'][j]]!,
-                          ),
-                        );
-                      },
+          child: Scrollbar(
+            thumbVisibility: true,
+            interactive: true,
+            thickness: 5,
+            child: ListView.builder(
+              itemCount: workouts.length,
+              itemBuilder: (context, i) {
+                return Column(
+                  children: [
+                    Text(workouts[i]['type'].toString().toUpperCase()),
+                    const Divider(
+                      thickness: 1,
                     ),
-                  )
-                ],
-              );
-            },
+                    SizedBox(
+                      height: workouts[i]['activities'].length * 70.0,
+                      child: ListView.separated(
+                        physics: const NeverScrollableScrollPhysics(),
+                        separatorBuilder: (context, index) => const Divider(),
+                        itemCount: workouts[i]['activities'].length,
+                        itemBuilder: (context, j) {
+                          return ListTile(
+                            title: Text(workouts[i]['activities'][j]),
+                            trailing: Switch(
+                              onChanged: (bool value) => toggleSwitch(
+                                  value, workouts[i]['activities'][j]),
+                              value: switchVal[workouts[i]['activities'][j]]!,
+                            ),
+                          );
+                        },
+                      ),
+                    )
+                  ],
+                );
+              },
+            ),
           ),
         ),
       ),

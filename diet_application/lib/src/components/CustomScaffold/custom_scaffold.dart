@@ -1,5 +1,5 @@
 import 'package:diet_application/src/components/SideNav/side_nav.dart';
-import 'package:diet_application/src/styles/colors.dart';
+import 'package:diet_application/src/components/SideNav/styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomScaffold extends StatelessWidget {
@@ -14,7 +14,7 @@ class CustomScaffold extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: title,
-        iconTheme: const IconThemeData(color: ProjectColors.primary),
+        iconTheme: Styles.appBarIconTheme,
       ),
       body: SingleChildScrollView(child: child),
       drawer: const SideNav(),

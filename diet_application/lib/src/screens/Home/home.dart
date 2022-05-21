@@ -1,6 +1,7 @@
 import 'package:diet_application/src/components/CustomScaffold/custom_scaffold.dart';
 import 'package:diet_application/src/screens/Home/CircularIndicator.dart';
 import 'package:diet_application/src/screens/Home/styles.dart';
+import 'package:diet_application/src/screens/Menu/menu.dart';
 import 'package:diet_application/src/styles/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -17,6 +18,8 @@ class _HomeScreenState extends State<HomeScreen> {
   HomeStyles style = HomeStyles();
   int _water = 0;
   int _calories = 100;
+
+  List<String> items = List.generate(10, (i) => "Dish $i");
 
   @override
   Widget build(BuildContext context) {
@@ -92,48 +95,26 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(
               height: 20,
             ),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: const [Text("Dish 1"), Text("Dish 6")],
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: const [Text("Dish 2"), Text("Dish 7")],
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: const [Text("Dish 3"), Text("Dish 8")],
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: const [Text("Dish 4"), Text("Dish 9")],
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: const [Text("Dish 5"), Text("Dish 10")],
+            SizedBox(
+              height: 200,
+              child: ListView.separated(
+                separatorBuilder: (context, index) {
+                  return const Divider();
+                },
+                itemCount: items.length,
+                itemBuilder: (context, i) {
+                  return ListTile(
+                      leading: Text((i + 1).toString()),
+                      title: Text(
+                          items[i][0].toUpperCase() + items[i].substring(1)));
+                },
+              ),
             ),
             const SizedBox(
               height: 20,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () => Navigator.of(context).pushNamed(Menu.routeName),
               style: HomeStyles.menuBtn,
               child: const Text("Get Details"),
             )

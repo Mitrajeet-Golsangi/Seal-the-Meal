@@ -13,4 +13,6 @@ class Styles {
 
   static const subheadingStyle =
       TextStyle(fontSize: 11, fontStyle: FontStyle.italic);
+
+  static const appBarIconTheme = IconThemeData(color: ProjectColors.primary);
 }

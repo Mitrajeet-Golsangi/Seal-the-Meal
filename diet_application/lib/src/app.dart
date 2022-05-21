@@ -2,6 +2,7 @@ import 'package:diet_application/src/components/SideNav/styles.dart';
 import 'package:diet_application/src/screens/Auth/log_out.dart';
 import 'package:diet_application/src/screens/Explore/explore.dart';
 import 'package:diet_application/src/screens/Home/home.dart';
+import 'package:diet_application/src/screens/Menu/menu.dart';
 import 'package:diet_application/src/screens/Profile/profile.dart';
 import 'package:diet_application/src/screens/Workout/workout.dart';
 import 'package:diet_application/src/styles/colors.dart';
@@ -82,6 +83,8 @@ class MyApp extends StatelessWidget {
                     return const Workout();
                   case LogOut.routeName:
                     return const LogOut();
+                  case Menu.routeName:
+                    return const Menu();
                   default:
                     return const HomeScreen();
                 }

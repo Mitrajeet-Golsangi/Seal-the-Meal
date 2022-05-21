@@ -2,6 +2,7 @@ import 'package:diet_application/src/components/SideNav/styles.dart';
 import 'package:diet_application/src/screens/Auth/log_out.dart';
 import 'package:diet_application/src/screens/Explore/explore.dart';
 import 'package:diet_application/src/screens/Home/home.dart';
+import 'package:diet_application/src/screens/Menu/menu.dart';
 import 'package:diet_application/src/screens/Profile/profile.dart';
 import 'package:diet_application/src/screens/Workout/workout.dart';
 import 'package:diet_application/src/styles/colors.dart';
@@ -82,6 +83,14 @@ class _SideNavState extends State<SideNav> {
             leading: const Icon(Icons.home),
             title: const Text("Home"),
             onTap: () => routeTo(context, HomeScreen.routeName),
+          ),
+          ListTile(
+            selectedColor: ProjectColors.primary,
+            selectedTileColor: Colors.grey[200],
+            selected: currentPage == Menu.routeName,
+            leading: const Icon(Icons.restaurant_menu),
+            title: const Text("Menu"),
+            onTap: () => routeTo(context, Menu.routeName),
           ),
           ListTile(
             selectedColor: ProjectColors.primary,

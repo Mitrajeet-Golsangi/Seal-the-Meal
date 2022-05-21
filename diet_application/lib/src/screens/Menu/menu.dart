@@ -21,6 +21,7 @@ class _MenuState extends State<Menu> {
         MenuListTile(
             title: "Proteins",
             units: "gm",
+          img: "proteins.jpg",
             items: const [
               "Milk",
               "Eggs",
@@ -53,10 +54,11 @@ class _MenuState extends State<Menu> {
               "cashews",
               "pumpkin seeds",
             ],
-            img: "proteins.jpg"),
+        ),
         MenuListTile(
           title: "Carbohydrates",
           units: "kcal",
+          img: "Carbohydrate.jpeg",
           items: const [
             "Grains",
             "bread",
@@ -93,6 +95,7 @@ class _MenuState extends State<Menu> {
         MenuListTile(
           title: "Vitamins",
           units: "gm",
+          img: "vitamins.jpg",
           items: const [
             "Fruits",
             "Vegetables",
@@ -129,6 +132,7 @@ class _MenuState extends State<Menu> {
         MenuListTile(
           title: "Potassium",
           units: "gm",
+          img: "Potassium.jpg",
           items: const [
             "Dried Fruits",
             "Spinach",

@@ -1,4 +1,4 @@
-import 'package:diet_application/src/screens/Auth/register.dart';
+import 'package:diet_application/src/screens/Auth/Register/register.dart';
 import 'package:flutter/material.dart';
 
 class RegisterNow extends StatelessWidget {

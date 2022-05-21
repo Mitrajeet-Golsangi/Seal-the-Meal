@@ -1,9 +1,9 @@
 import 'package:diet_application/src/SideNav/SideNav/styles.dart';
-import 'package:diet_application/src/screens/Auth/log_out.dart';
 import 'package:diet_application/src/screens/Explore/explore.dart';
 import 'package:diet_application/src/screens/Home/home.dart';
 import 'package:diet_application/src/screens/Menu/menu.dart';
 import 'package:diet_application/src/screens/Profile/profile.dart';
+import 'package:diet_application/src/screens/Splash/splash_screen.dart';
 import 'package:diet_application/src/screens/Workout/workout.dart';
 import 'package:diet_application/src/styles/colors.dart';
 import 'package:flutter/material.dart';
@@ -119,10 +119,9 @@ class _SideNavState extends State<SideNav> {
           ListTile(
             selectedColor: ProjectColors.primary,
             selectedTileColor: Colors.grey[200],
-            selected: currentPage == LogOut.routeName,
             leading: const Icon(Icons.follow_the_signs),
             title: const Text("Log Out"),
-            onTap: () => routeTo(context, LogOut.routeName),
+            onTap: () => routeTo(context, SplashScreen.routeName),
           )
         ],
       ),

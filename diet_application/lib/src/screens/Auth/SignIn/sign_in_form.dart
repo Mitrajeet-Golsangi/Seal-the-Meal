@@ -1,3 +1,5 @@
+import 'package:diet_application/src/screens/Auth/styles.dart';
+import 'package:diet_application/src/screens/Home/home.dart';
 import 'package:flutter/material.dart';
 
 class SignInForm extends StatelessWidget {
@@ -31,11 +33,9 @@ class SignInForm extends StatelessWidget {
             height: 10,
           ),
           ElevatedButton(
-            onPressed: () {},
-            style: ElevatedButton.styleFrom(
-              fixedSize: const Size(400, 40),
-              primary: Colors.black,
-            ),
+            onPressed: () =>
+                Navigator.of(context).pushNamed(HomeScreen.routeName),
+            style: SignInStyles.buttonStyle,
             child: const Text("Sign In"),
           )
         ],

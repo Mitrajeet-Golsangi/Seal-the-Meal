@@ -1,4 +1,4 @@
-import 'package:diet_application/src/screens/Auth/register.dart';
+import 'package:diet_application/src/screens/Auth/Register/register.dart';
 import 'package:diet_application/src/screens/Auth/SignIn/sign_in.dart';
 import 'package:diet_application/src/screens/Splash/styles.dart';
 import 'package:flutter/material.dart';

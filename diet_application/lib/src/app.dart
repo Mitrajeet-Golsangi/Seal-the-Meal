@@ -1,8 +1,9 @@
 import 'package:diet_application/src/SideNav/SideNav/styles.dart';
-import 'package:diet_application/src/screens/Auth/log_out.dart';
-import 'package:diet_application/src/screens/Auth/register.dart';
+import 'package:diet_application/src/screens/Auth/Register/personal_info.dart';
+import 'package:diet_application/src/screens/Auth/Register/register.dart';
 import 'package:diet_application/src/screens/Auth/SignIn/sign_in.dart';
 import 'package:diet_application/src/screens/Explore/explore.dart';
+import 'package:diet_application/src/screens/Home/home.dart';
 import 'package:diet_application/src/screens/Menu/menu.dart';
 import 'package:diet_application/src/screens/Profile/profile.dart';
 import 'package:diet_application/src/screens/Splash/splash_screen.dart';
@@ -103,14 +104,14 @@ class MyApp extends StatelessWidget {
               settings: routeSettings,
               builder: (BuildContext context) {
                 switch (routeSettings.name) {
+                  case HomeScreen.routeName:
+                    return const HomeScreen();
                   case Explore.routeName:
                     return const Explore();
                   case Profile.routeName:
                     return const Profile();
                   case Workout.routeName:
                     return const Workout();
-                  case LogOut.routeName:
-                    return const LogOut();
                   case Menu.routeName:
                     return const Menu();
                   case SplashScreen.routeName:
@@ -119,6 +120,8 @@ class MyApp extends StatelessWidget {
                     return const SignIn();
                   case Register.routeName:
                     return const Register();
+                  case PersonalInfo.routeName:
+                    return const PersonalInfo();
                   default:
                     // return const HomeScreen();
                     return const SplashScreen();

@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "890699934482",
+    "project_id": "diet-application-acf40",
+    "storage_bucket": "diet-application-acf40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890699934482:android:c6b78ebdd44095fd7d61cb",
+        "android_client_info": {
+          "package_name": "com.example.diet_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890699934482-qtbj81diamrevnuch1ficas8r9h8v309.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.diet_application",
+            "certificate_hash": "04982cdb84be54613baeaa8ee90cd07781fa0e13"
+          }
+        },
+        {
+          "client_id": "890699934482-obfn2qjfdhomd7s98ktmt9bn1bjso2so.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQyDqXXvgcrhFMMS-fam_xxRqS9BXzymo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890699934482-obfn2qjfdhomd7s98ktmt9bn1bjso2so.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "890699934482-invg72qd9eu7kdbuc2nq720b4njq53qj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.dietApplication"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

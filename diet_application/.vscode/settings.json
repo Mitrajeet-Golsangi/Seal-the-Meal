@@ -1,7 +1,14 @@
 {
     "cSpell.words": [
         "ARGB",
+        "autovalidate",
         "Draggable",
         "RGBO"
-    ]
+    ],
+    "workbench.colorCustomizations": {
+        "[Material Theme Darker High Contrast]": {},
+        "activityBar.background": "#2A2A4A",
+        "titleBar.activeBackground": "#3A3B68",
+        "titleBar.activeForeground": "#F9F9FC"
+    }
 }

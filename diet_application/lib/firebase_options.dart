@@ -44,41 +44,41 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAnMOpylARAVwSc8iIsAIaz4edMuA4P_0Q',
-    appId: '1:890699934482:web:692b042bc66c4b647d61cb',
-    messagingSenderId: '890699934482',
-    projectId: 'diet-application-acf40',
-    authDomain: 'diet-application-acf40.firebaseapp.com',
-    storageBucket: 'diet-application-acf40.appspot.com',
+    apiKey: 'AIzaSyCz5X9hWwLfd8-j34PIPA-geWqy5afBXPI',
+    appId: '1:559371234950:web:b6d0405066ef4002fc2b07',
+    messagingSenderId: '559371234950',
+    projectId: 'seal-the-meal',
+    authDomain: 'seal-the-meal.firebaseapp.com',
+    storageBucket: 'seal-the-meal.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBQyDqXXvgcrhFMMS-fam_xxRqS9BXzymo',
-    appId: '1:890699934482:android:c6b78ebdd44095fd7d61cb',
-    messagingSenderId: '890699934482',
-    projectId: 'diet-application-acf40',
-    storageBucket: 'diet-application-acf40.appspot.com',
+    apiKey: 'AIzaSyCx_sGquMDSeD1N_oZ6f6k3Rhh8aF60_-A',
+    appId: '1:559371234950:android:9c87866044520a44fc2b07',
+    messagingSenderId: '559371234950',
+    projectId: 'seal-the-meal',
+    storageBucket: 'seal-the-meal.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyD1cWWXnG_48wHfbD5X9GkJOu3AiXu5H00',
-    appId: '1:890699934482:ios:686fd6a3b8e758b47d61cb',
-    messagingSenderId: '890699934482',
-    projectId: 'diet-application-acf40',
-    storageBucket: 'diet-application-acf40.appspot.com',
-    androidClientId: '890699934482-qtbj81diamrevnuch1ficas8r9h8v309.apps.googleusercontent.com',
-    iosClientId: '890699934482-invg72qd9eu7kdbuc2nq720b4njq53qj.apps.googleusercontent.com',
+    apiKey: 'AIzaSyDnUR_NoyRPGP-LhjJOY29U3k3k-nX0zvQ',
+    appId: '1:559371234950:ios:2559763818d48ed6fc2b07',
+    messagingSenderId: '559371234950',
+    projectId: 'seal-the-meal',
+    storageBucket: 'seal-the-meal.appspot.com',
+    iosClientId:
+        '559371234950-l4scolch55qtmsjh5885o4229p445fvp.apps.googleusercontent.com',
     iosBundleId: 'com.example.dietApplication',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyD1cWWXnG_48wHfbD5X9GkJOu3AiXu5H00',
-    appId: '1:890699934482:ios:686fd6a3b8e758b47d61cb',
-    messagingSenderId: '890699934482',
-    projectId: 'diet-application-acf40',
-    storageBucket: 'diet-application-acf40.appspot.com',
-    androidClientId: '890699934482-qtbj81diamrevnuch1ficas8r9h8v309.apps.googleusercontent.com',
-    iosClientId: '890699934482-invg72qd9eu7kdbuc2nq720b4njq53qj.apps.googleusercontent.com',
+    apiKey: 'AIzaSyDnUR_NoyRPGP-LhjJOY29U3k3k-nX0zvQ',
+    appId: '1:559371234950:ios:2559763818d48ed6fc2b07',
+    messagingSenderId: '559371234950',
+    projectId: 'seal-the-meal',
+    storageBucket: 'seal-the-meal.appspot.com',
+    iosClientId:
+        '559371234950-l4scolch55qtmsjh5885o4229p445fvp.apps.googleusercontent.com',
     iosBundleId: 'com.example.dietApplication',
   );
 }

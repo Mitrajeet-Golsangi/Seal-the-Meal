@@ -3,7 +3,7 @@ import 'package:diet_application/src/presentation/screens/Auth/Register/registra
 import 'package:flutter/material.dart';
 
 class Register extends StatefulWidget {
-  const Register({Key? key}) : super(key: key);
+  const Register({super.key});
   static const routeName = '/register';
 
   @override
@@ -13,11 +13,11 @@ class Register extends StatefulWidget {
 class _RegisterState extends State<Register> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(10),
-          child: Column(children: const [
+          padding: EdgeInsets.all(10),
+          child: Column(children: [
             SizedBox(
               height: 40,
             ),

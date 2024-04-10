@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class SideNav extends StatefulWidget {
-  const SideNav({Key? key}) : super(key: key);
+  const SideNav({super.key});
 
   @override
   State<SideNav> createState() => _SideNavState();
@@ -57,10 +57,10 @@ class _SideNavState extends State<SideNav> {
                     onPressed: () => Navigator.pop(context),
                     icon: const Icon(Icons.arrow_back_ios_new),
                   ),
-                  Column(
+                  const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.end,
-                    children: const [
+                    children: [
                       Text(
                         "Seal The Meal !",
                         style: Styles.heading,

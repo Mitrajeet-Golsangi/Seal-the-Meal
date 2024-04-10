@@ -7,7 +7,7 @@ class HomeStyles {
   static ButtonStyle indicatorButton({Color color = Colors.blue}) {
     return ElevatedButton.styleFrom(
       fixedSize: const Size(140, 30),
-      primary: color,
+      backgroundColor: color,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.all(
           Radius.circular(20),
@@ -17,7 +17,7 @@ class HomeStyles {
   }
 
   static ButtonStyle menuBtn = ElevatedButton.styleFrom(
-    primary: Colors.black,
+    backgroundColor: Colors.black,
     fixedSize: const Size(140, 15),
   );
 }

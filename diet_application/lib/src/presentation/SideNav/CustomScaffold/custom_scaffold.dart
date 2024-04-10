@@ -3,8 +3,7 @@ import 'package:diet_application/src/presentation/SideNav/SideNav/styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomScaffold extends StatelessWidget {
-  const CustomScaffold({Key? key, required this.title, required this.child})
-      : super(key: key);
+  const CustomScaffold({super.key, required this.title, required this.child});
 
   final Widget child;
   final Widget title;

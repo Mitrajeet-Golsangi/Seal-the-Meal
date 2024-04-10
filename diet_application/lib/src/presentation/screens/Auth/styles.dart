@@ -21,7 +21,7 @@ class SignInStyles {
 
   static ButtonStyle buttonStyle = ElevatedButton.styleFrom(
     fixedSize: const Size(400, 40),
-    primary: Colors.black,
+    backgroundColor: Colors.black,
   );
 }
 

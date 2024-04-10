@@ -2,7 +2,7 @@ import 'package:diet_application/src/presentation/screens/Auth/Register/register
 import 'package:flutter/material.dart';
 
 class RegisterNow extends StatelessWidget {
-  const RegisterNow({Key? key}) : super(key: key);
+  const RegisterNow({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -3,7 +3,7 @@ import 'package:diet_application/src/presentation/screens/Auth/styles.dart';
 import 'package:flutter/material.dart';
 
 class RegistrationForm extends StatelessWidget {
-  const RegistrationForm({Key? key}) : super(key: key);
+  const RegistrationForm({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -3,12 +3,12 @@ import 'package:diet_application/src/presentation/styles/colors.dart';
 import 'package:flutter/material.dart';
 
 class SignInDivider extends StatelessWidget {
-  const SignInDivider({Key? key}) : super(key: key);
+  const SignInDivider({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: const [
+    return const Row(
+      children: [
         Expanded(
           child: Divider(
             thickness: 1,

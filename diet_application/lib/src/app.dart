@@ -17,8 +17,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 
 /// The Widget that configures your application.
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key, required this.authenticationRepository})
-      : super(key: key);
+  const MyApp({super.key, required this.authenticationRepository});
 
   final AuthenticationRepository authenticationRepository;
 

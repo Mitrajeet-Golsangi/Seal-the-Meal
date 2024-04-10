@@ -3,15 +3,15 @@ import 'package:diet_application/src/presentation/screens/Auth/Register/personal
 import 'package:flutter/material.dart';
 
 class PersonalInfo extends StatelessWidget {
-  const PersonalInfo({Key? key}) : super(key: key);
+  const PersonalInfo({super.key});
   static const routeName = "/personal_info";
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(10),
-          child: Column(children: const [
+          padding: EdgeInsets.all(10),
+          child: Column(children: [
             SizedBox(
               height: 40,
             ),

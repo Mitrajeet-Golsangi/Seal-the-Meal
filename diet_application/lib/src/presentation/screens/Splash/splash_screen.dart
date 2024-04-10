@@ -4,7 +4,7 @@ import 'package:diet_application/src/presentation/screens/Splash/styles.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+  const SplashScreen({super.key});
   static const routeName = "/splash";
 
   @override
@@ -23,7 +23,7 @@ class SplashScreen extends StatelessWidget {
         const SizedBox(
           height: 10,
         ),
-        const Text("EAT | SWEAT| REPEAT", style: ProfileStyles.subheading),
+        const Text("EAT | SWEAT | REPEAT", style: ProfileStyles.subheading),
         const SizedBox(
           height: 50,
         ),
@@ -34,13 +34,20 @@ class SplashScreen extends StatelessWidget {
               onPressed: () =>
                   Navigator.of(context).pushNamed(SignIn.routeName),
               style: ProfileStyles.signInBtn,
-              child: const Text("Sign In"),
+              child: const Text(
+                "Sign In",
+                style: ProfileStyles.buttonText,
+              ),
             ),
             ElevatedButton(
                 style: ProfileStyles.registerBtn,
                 onPressed: () =>
                     Navigator.of(context).pushNamed(Register.routeName),
-                child: const Text("Register"))
+              child: const Text(
+                "Register",
+                style: ProfileStyles.buttonText,
+              ),
+            )
           ],
         )
       ]),

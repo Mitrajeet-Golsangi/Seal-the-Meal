@@ -2,13 +2,13 @@ import 'package:diet_application/src/presentation/screens/Auth/styles.dart';
 import 'package:flutter/cupertino.dart';
 
 class Header extends StatelessWidget {
-  const Header({Key? key}) : super(key: key);
+  const Header({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: const [
+      children: [
         SizedBox(
           height: 30,
         ),

@@ -3,7 +3,7 @@ import 'package:diet_application/src/presentation/SideNav/SideNav/styles.dart';
 import 'package:flutter/material.dart';
 
 class Explore extends StatefulWidget {
-  const Explore({Key? key}) : super(key: key);
+  const Explore({super.key});
   static const routeName = "/explore";
 
   @override
@@ -13,14 +13,14 @@ class Explore extends StatefulWidget {
 class _ExploreState extends State<Explore> {
   @override
   Widget build(BuildContext context) {
-    return CustomScaffold(
-      title: const Text("Explore"),
+    return const CustomScaffold(
+      title: Text("Explore"),
       child: Padding(
-        padding: const EdgeInsets.all(10),
+        padding: EdgeInsets.all(10),
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
+            children: [
               Text(
                 "Daily Feed !",
                 style: Styles.heading,

@@ -12,9 +12,14 @@ class ProfileStyles {
     fontSize: 19,
   );
 
+  static const TextStyle buttonText = TextStyle(
+    color: Colors.white,
+    fontSize: 16,
+  );
+
   static ButtonStyle signInBtn = ElevatedButton.styleFrom(
-    primary: Colors.black,
-    fixedSize: const Size(100, 30),
+    backgroundColor: Colors.black,
+    fixedSize: const Size(110, 30),
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.only(
         topRight: Radius.zero,
@@ -25,8 +30,8 @@ class ProfileStyles {
     ),
   );
   static ButtonStyle registerBtn = ElevatedButton.styleFrom(
-    primary: const Color(0xff6e77f6),
-    fixedSize: const Size(100, 30),
+    backgroundColor: const Color(0xff6e77f6),
+    fixedSize: const Size(110, 30),
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.only(
         topLeft: Radius.zero,

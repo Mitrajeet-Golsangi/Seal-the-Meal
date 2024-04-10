@@ -3,7 +3,7 @@ import 'package:diet_application/src/presentation/screens/Menu/menu_list.dart';
 import 'package:flutter/material.dart';
 
 class Menu extends StatefulWidget {
-  const Menu({Key? key}) : super(key: key);
+  const Menu({super.key});
   static const routeName = '/menu';
 
   @override

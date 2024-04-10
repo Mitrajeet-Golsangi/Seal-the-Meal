@@ -2,7 +2,7 @@ import 'package:diet_application/src/presentation/SideNav/CustomScaffold/custom_
 import 'package:flutter/material.dart';
 
 class Workout extends StatefulWidget {
-  const Workout({Key? key}) : super(key: key);
+  const Workout({super.key});
   static const routeName = "/workout";
 
   @override

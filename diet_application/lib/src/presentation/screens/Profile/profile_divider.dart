@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ProfileDivider extends StatelessWidget {
-  ProfileDivider({Key? key, required this.title}) : super(key: key);
+  ProfileDivider({super.key, required this.title});
   String title;
   @override
   Widget build(BuildContext context) {

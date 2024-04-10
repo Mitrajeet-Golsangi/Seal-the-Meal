@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 
 class CircularIndicator extends StatelessWidget {
-  CircularIndicator(
-      {Key? key,
+  CircularIndicator({super.key,
       this.color = Colors.blue,
       this.showBoth = true,
       required this.value,
       required this.total,
-      required this.indicationText})
-      : super(key: key);
+      required this.indicationText});
 
   int value = 0;
   int total;

@@ -2,12 +2,10 @@ import 'package:diet_application/src/presentation/SideNav/SideNav/styles.dart';
 import 'package:flutter/material.dart';
 
 class MenuDetails extends StatelessWidget {
-  MenuDetails(
-      {Key? key,
+  MenuDetails({super.key,
       this.img = "MenuHeader.png",
       required this.items,
-      required this.type})
-      : super(key: key);
+      required this.type});
 
   String img;
   String type;

@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class SignIn extends StatefulWidget {
-  const SignIn({Key? key}) : super(key: key);
+  const SignIn({super.key});
   static const routeName = '/signin';
 
   @override
@@ -26,7 +26,7 @@ class _SignInState extends State<SignIn> {
           child: BlocProvider(
             create: (context) =>
                 LoginCubit(context.read<AuthenticationRepository>()),
-            child: Column(children: const [
+            child: const Column(children: [
               Header(),
               SignInForm(),
               SizedBox(

@@ -3,5 +3,6 @@ import 'package:flutter/material.dart';
 
 class MenuStyles {
   static ButtonStyle textBtn = TextButton.styleFrom(
-      textStyle: const TextStyle(fontSize: 11.5), primary: ProjectColors.links);
+      foregroundColor: ProjectColors.links,
+      textStyle: const TextStyle(fontSize: 11.5));
 }

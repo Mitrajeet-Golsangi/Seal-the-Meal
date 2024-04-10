@@ -3,7 +3,7 @@ import 'package:diet_application/src/presentation/screens/Home/home.dart';
 import 'package:flutter/material.dart';
 
 class PersonalInfoForm extends StatefulWidget {
-  const PersonalInfoForm({Key? key}) : super(key: key);
+  const PersonalInfoForm({super.key});
 
   @override
   State<PersonalInfoForm> createState() => _PersonalInfoFormState();

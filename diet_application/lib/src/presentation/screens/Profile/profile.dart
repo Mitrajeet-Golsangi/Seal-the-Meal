@@ -8,7 +8,7 @@ import "package:flutter/material.dart";
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class Profile extends StatefulWidget {
-  const Profile({Key? key}) : super(key: key);
+  const Profile({super.key});
   static const routeName = "/profile";
   @override
   State<Profile> createState() => _ProfileState();

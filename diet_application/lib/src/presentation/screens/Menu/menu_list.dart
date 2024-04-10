@@ -4,14 +4,12 @@ import 'package:diet_application/src/presentation/styles/colors.dart';
 import 'package:flutter/material.dart';
 
 class MenuListTile extends StatelessWidget {
-  MenuListTile(
-      {Key? key,
+  MenuListTile({super.key,
       required this.title,
       required this.units,
       required this.items,
       this.height = 110.0,
-      this.img = "MenuHeader.png"})
-      : super(key: key);
+      this.img = "MenuHeader.png"});
 
   String title;
   String units;

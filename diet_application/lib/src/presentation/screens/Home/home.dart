@@ -6,7 +6,7 @@ import 'package:diet_application/src/presentation/styles/colors.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   static const routeName = "/home";
 

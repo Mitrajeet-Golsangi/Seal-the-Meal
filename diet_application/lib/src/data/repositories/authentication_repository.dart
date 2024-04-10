@@ -78,7 +78,10 @@ class AuthenticationRepository {
         googleProvider.setCustomParameters({'login_hint': 'user@example.com'});
         await _auth.signInWithRedirect(googleProvider);
       } else {
-        final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
+        final GoogleSignInAccount? googleUser = await GoogleSignIn(
+                serverClientId:
+                    "559371234950-nbrhtha4r56k889fjpbl5ertebst4o4r.apps.googleusercontent.com")
+            .signIn();
 
         final GoogleSignInAuthentication? googleAuth =
             await googleUser?.authentication;

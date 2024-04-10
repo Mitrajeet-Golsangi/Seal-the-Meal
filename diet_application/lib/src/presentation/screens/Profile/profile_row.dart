@@ -2,8 +2,7 @@ import 'package:diet_application/src/presentation/screens/Profile/styles.dart';
 import 'package:flutter/material.dart';
 
 class ProfileRow extends StatelessWidget {
-  const ProfileRow({Key? key, required this.leading, required this.trailing})
-      : super(key: key);
+  const ProfileRow({super.key, required this.leading, required this.trailing});
 
   final String leading, trailing;
 

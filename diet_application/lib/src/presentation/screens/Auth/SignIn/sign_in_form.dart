@@ -5,7 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class SignInForm extends StatefulWidget {
-  const SignInForm({Key? key}) : super(key: key);
+  const SignInForm({super.key});
+
   @override
   State<SignInForm> createState() => _SignInFormState();
 }
@@ -58,7 +59,7 @@ class _SignInFormState extends State<SignInForm> {
               ),
               TextButton(
                 onPressed: () {},
-                style: TextButton.styleFrom(primary: Colors.black),
+                style: TextButton.styleFrom(foregroundColor: Colors.black),
                 child: const Text("Forgot Password ?"),
               ),
               const SizedBox(
@@ -86,7 +87,10 @@ class _SignInFormState extends State<SignInForm> {
                         }
                       },
                       style: SignInStyles.buttonStyle,
-                      child: const Text("Sign In"),
+                      child: const Text(
+                        "Sign In",
+                        style: TextStyle(color: Colors.white),
+                      ),
                     ),
             ],
           );

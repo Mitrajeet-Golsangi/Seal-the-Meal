@@ -1,5 +1,5 @@
-name: diet_application
-description: A new Flutter project.
+name: seal_the_meal
+description: A smart diet assistant which analyses your exercise pattern to give you the best possible meals.
 
 # Prevent accidental publishing to pub.dev.
 publish_to: 'none'

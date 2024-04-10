@@ -1,6 +1,6 @@
-# diet_application
+# Seal The Meal
 
-A new Flutter project.
+A smart diet assistant which analyses your exercise pattern to give you the best possible meals.
 
 ## Getting Started
 
